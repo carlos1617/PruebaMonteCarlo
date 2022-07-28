@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/stilo.css')}}">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="#"><img src="/static/img/logo.jpeg" class="imglayout"></a>
+
+            <nav>
+                <ul>
+                    <li> <a href="{{url_for('inicio')}}"> Inicio </a> </li>
+                    <li> <a href="{{url_for('resultados')}}"> Resultados </a> </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+        <br>
+    <h3 class=""><center>Descripción de MonteCarlo</center></h3>
+    <div style="text-align:center ;">
+    <p  style="text-align:center ;">Podemos definirlo como un metodo no determinístico o estadístico numérico, que es usado para aproximar
+    expresiones matemáticas complejas y costosas para evaluar con exactitud.
+    El presente metódo recibe ese nombre debido a las multiples referencias del Casino de MonteCarlo por ser "la capital del juego de azar", al ser una de sus 
+    principales atracciones un generador de números aleatorios (la ruleta). El año aprocimado de su implementación data alrededor de 1944 y posteriormente fué mejorado con 
+    el desarrollo de computadoras.</p>
+    </body>
+    <div align="center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Q75RN2fSKvWNnDPWD5W27xJFqJRxFef5pQ&usqp=CAU" alt=""></div>
+        <h3 class=""><center>Ejercicio Planteado de MonteCarlo</center></h3>
+    <p style="text-align:center ;">Una tienda mayorista experimenta la siguiente distribución de probabilidades de un producto:</p>
+    <div class="container" style="margin-top:15px;">
+        <center> {{data|safe}}</center>
+    </div>
+    <p style="text-align:center ;"> <b>A)   ¿Cuáles son las ventas de cada uno de los prócimos 20 días?.</b></p>
+    <p style="text-align:center ;"> <b>B)   ¿Cuál es la venta total de los próximos 20 días?.</b></p>
+    <p style="text-align:center ;"> Para la realización del presente ejercicio, debemos hacer uso de los siguientes números aleatorios:</p>
+    <div class="container" style="margin-top:15px;">
+        <center> {{data4|safe}}</center>
+    </div>
+    <a href="{{url_for('resultados')}}">calcular</a>
+    <footer class="footer"> 
+        <p class="text2">Modelamiento y simulación</p>
+        <p class="text2">Prueba de montecarlo</p>
+        <p class="text2">Carlos Eduardo Palma Miranda</p>
+        <p class="text2">@2022 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/stilo.css')}}">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="#"><img src="/static/img/logo.jpeg" class="imglayout"></a>
+
+            <nav>
+                <ul>
+                    <li> <a href="{{url_for('inicio')}}"> Inicio </a> </li>
+                    <li> <a href="{{url_for('resultados')}}"> Resultados </a> </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+<h2 style="text-align:center ;"> Resultados:</h2>
+<p style="text-align:center ;"> Acontinucación se procede a mostrar los resultados de la simulación</p>
+
+<div class="container" style="margin-top:15px;">
+    <center> {{data1|safe}}</center>
+</div>
+<p style="text-align:center ;"> Procedemos a definir los límites inferiores y superiores, los cuales aparecen en la siguiente tabla:</p>
+<div class="container" style="margin-top:15px;">
+    <center> {{data2|safe}}</center>
+</div>
+<p style="text-align:center ;"><b>Literal A:</b></p> 
+<p style="text-align:center ;"> Ahora seleccionamos los números aleatorios de la página anterior y verificamos de
+     acuerdo al rando de los números mínimos y máximos obtenidos en la tabal anterior y colocamos el número de ventas perteneciente a dicho rango.</p>
+
+<div class="container" style="margin-top:15px;">
+    <center> {{data5|safe}}</center>
+</div>
+<p style="text-align:center ;"><b>Literal B:</b></p>
+<p style="text-align:center ;"> Si al final sumamos los resultados obtenidos de la simulación de las ventas obtendremos como resultado:</p>
+<div class="container" style="margin-top:15px;">
+    <center><h2> 51</h2></center>
+</div>
+
+<footer class="footer"> 
+    <p class="text2">Modelamiento y simulación</p>
+    <p class="text2">Prueba de montecarlo</p>
+    <p class="text2">Carlos Eduardo Palma Miranda</p>
+    <p class="text2">@2022 Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
